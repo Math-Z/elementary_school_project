@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+  
+.school-name {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.welcome {
+    font-size: 12px;
+    padding-bottom: 1px;
+}
+
+.username {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dashboard-body {
+    display: flex;
+    flex: 1;
+    background-color: #f0f0f0;
+    height: 100vh;
+}
+  
+.dashboard-main {
+    flex: 3;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.dashboard-side {
+    flex: 1;
+    padding: 20px;
+    background-color: #eaeaea;
+}
