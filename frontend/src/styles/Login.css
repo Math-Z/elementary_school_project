@@ -1,0 +1,88 @@
+.login-div * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.login-form {
+    max-width: 400px;
+    width: 100%;
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .login-form {
+        max-width: 90%;
+        padding: 16px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .login-form {
+        max-width: 500px;
+        padding: 32px;
+    }
+}
+
+.school-title {
+    font-size: 32px;
+    padding-bottom: 32px;
+}
+
+.welcome {
+    font-size: 24px;
+    padding-bottom: 24px;
+}
+
+.input-label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 4px; 
+}
+
+.username-input, .password-input {
+    padding: 12px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    background-color: #f0f0f0;
+}
+
+.login-button {
+    width: 219px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(39, 133, 196);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: rgb(31, 109, 161);
+}
+
+.select-option {
+    width: 219px;
+    padding: 6px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
