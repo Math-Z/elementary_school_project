@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import '../styles/Dashboard.css'
+import './Dashboard.scss'
 
 function Dashboard() {
     const location = useLocation();
@@ -18,7 +18,13 @@ function Dashboard() {
 
         <div className='dashboard-body'>
             <div className='dashboard-main'>
-                {userType === 'aluno' && (
+                {userType === 'adminstrador' && (
+                    <div>
+                        
+                    </div>
+                )}
+                
+                {(userType === 'aluno' || userType === 'adminstrador') && (
                     <div>
                         <h2>Matérias</h2>
                         <ul>
@@ -29,7 +35,7 @@ function Dashboard() {
                     </div>
                 )}
 
-                {userType === 'professor' && (
+                {(userType === 'professor' || userType === 'adminstrador') && (
                     <div>
                         <h2>Turmas</h2>
                         <ul>

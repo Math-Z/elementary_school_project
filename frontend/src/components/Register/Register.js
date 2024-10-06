@@ -26,7 +26,7 @@ function Register() {
       <select value={type} onChange={(e) => setUserType(e.target.value)}>
         <option value="aluno">Aluno</option>
         <option value="professor">Professor</option>
-        <option valeu="administrador">Administrador</option>
+        <option value="administrador">Administrador</option>
       </select>
       <input
         type="text"

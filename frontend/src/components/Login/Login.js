@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import '../styles/Login.css';
+import './Login.scss';
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -28,7 +28,7 @@ function Login() {
     <div className='login-div'>
       <form onSubmit={handleLogin} className='login-form'>
         <h1 className='school-title'>Escola</h1>
-        <h2 className='welcome'>Seja Bem-Vindo!</h2>
+        <h2 className='login-welcome'>Seja Bem-Vindo!</h2>
 
         <div>
           <label className='input-label'>Nome de usuário</label>
